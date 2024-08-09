@@ -18,7 +18,7 @@ public class LinkedListDeque<T> {
         private Node<K> next;
         private Node<K> prev;
 
-        public Node(K data) {
+        Node(K data) {
             this.item = data;
         }
 
