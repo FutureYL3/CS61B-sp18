@@ -24,7 +24,7 @@ public class LinkedListDeque<T> {
 
         public K getRecursiveHelper(int index, Node<K> current) {
             if (index == 0) {
-                return this.item;
+                return current.item;
             } else {
                 current = current.next;
                 return getRecursiveHelper(index - 1, current);
@@ -101,7 +101,7 @@ public class LinkedListDeque<T> {
     }
 
     public T get(int index) {
-        if (this.size - 1 < index) {
+        if (this.size - 1 < index || index < 0) {
             return null;
         }
         int counter = 0;
@@ -114,7 +114,7 @@ public class LinkedListDeque<T> {
     }
 
     public T getRecursive(int index) {
-        if (this.size - 1 < index) {
+        if (this.size - 1 < index || index < 0) {
             return null;
         }
         Node<T> cur = this.head.next;
