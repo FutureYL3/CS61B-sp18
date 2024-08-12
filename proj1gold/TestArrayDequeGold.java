@@ -55,11 +55,13 @@ public class TestArrayDequeGold {
                         callSeqs.add("removeLast()");
                     }
                     break;
+                default:
+                    break;
             }
 
             if (!hasAddedItem) {
 //                System.out.println(counter);
-                assertEquals(String.join("\n", callSeqs),b, a);
+                assertEquals(String.join("\n", callSeqs), b, a);
             }
         }
     }
