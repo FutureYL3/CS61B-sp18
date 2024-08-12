@@ -11,16 +11,24 @@ public class TestOffByOne {
     @Test
     public void testOffByOne() {
         assertTrue(offByOne.equalChars('a', 'b'));
-        assertTrue(offByOne.equalChars('h', 'i'));
-        assertTrue(offByOne.equalChars('Y', 'X'));
-        assertTrue(offByOne.equalChars('%', '&'));
+        assertTrue(offByOne.equalChars('r', 'q'));
+        assertTrue(offByOne.equalChars('&', '%'));
+        assertTrue(offByOne.equalChars('A', 'B'));
+        assertTrue(offByOne.equalChars('1', '2'));
+        assertTrue(offByOne.equalChars('&', '%'));
+        assertTrue(offByOne.equalChars('@', 'A'));
+        assertTrue(offByOne.equalChars('`', 'a'));
+        assertTrue(offByOne.equalChars('z', '{'));
 
         assertFalse(offByOne.equalChars('a', 'a'));
-        assertFalse(offByOne.equalChars('h', 'j'));
-        assertFalse(offByOne.equalChars('a', 'z'));
-        assertFalse(offByOne.equalChars('T', 'H'));
-        assertFalse(offByOne.equalChars('%', '+'));
-        assertFalse(offByOne.equalChars('a', 'A'));
+        assertFalse(offByOne.equalChars('A', 'a'));
+        assertFalse(offByOne.equalChars('A', 'C'));
+        assertFalse(offByOne.equalChars('c', '3'));
+        assertFalse(offByOne.equalChars('x', 'z'));
+        assertFalse(offByOne.equalChars('Z', 'X'));
+        assertFalse(offByOne.equalChars('1', '3'));
+        assertFalse(offByOne.equalChars('?', '!'));
+        assertFalse(offByOne.equalChars(' ', '"'));
     }
 
 
