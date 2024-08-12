@@ -154,7 +154,7 @@ public void addLast(int x) {
 
 添加哨兵：我们可以通过创建一个始终存在的特殊节点来实现这一点，我们将其称为**哨兵节点**。哨兵节点将保存一个我们不关心的值。
 
-![image-20240807212656688](./Week2%20%E8%AE%B0%E5%BD%95.assets/image-20240807212656688.png)
+![image-20240807212656688](./Week 2%20%E8%AE%B0%E5%BD%95.assets/image-20240807212656688.png)
 
 添加哨兵后改进的代码：
 
@@ -207,7 +207,7 @@ public class IntNode {
 
 改进后大小为 0 和大小为 2 的双链表图示：
 
-![image-20240807213236537](./Week2%20%E8%AE%B0%E5%BD%95.assets/image-20240807213236537.png)
+![image-20240807213236537](./Week 2%20%E8%AE%B0%E5%BD%95.assets/image-20240807213236537.png)
 
 ### 改进可能发生异常情况
 
@@ -215,11 +215,11 @@ public class IntNode {
 
 1. 采用双哨兵
 
-   ![image-20240807213435857](./Week2%20%E8%AE%B0%E5%BD%95.assets/image-20240807213435857.png)
+   ![image-20240807213435857](./Week 2%20%E8%AE%B0%E5%BD%95.assets/image-20240807213435857.png)
 
 2. 采用循环链表
 
-   ![image-20240807213502480](./Week2%20%E8%AE%B0%E5%BD%95.assets/image-20240807213502480.png)
+   ![image-20240807213502480](./Week 2%20%E8%AE%B0%E5%BD%95.assets/image-20240807213502480.png)
 
 ### 改进适用范围
 
